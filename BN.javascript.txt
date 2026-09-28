@@ -1,0 +1,11 @@
+// BN.js
+
+// Function to handle Buy Now clicks
+function buyNow(productName, price) {
+    // Store product details in localStorage so checkout page can read it
+    localStorage.setItem("chocolate truffle ice cream", productName);
+    localStorage.setItem("₹249", price);
+
+    // Redirect to checkout page
+    window.location.href = "checkout.html";
+}
